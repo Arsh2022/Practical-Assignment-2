@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coit11134.assignment2.vehicleregistrationgui.FXMLOwnerSearchController">
+    <children>
+      <TitledPane alignment="CENTER" animated="false" contentDisplay="CENTER" prefHeight="40.0" prefWidth="711.0" text="Owner Search">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TitledPane>
+      <TabPane layoutY="32.0" prefHeight="484.0" prefWidth="711.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Private Owner">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="label4" layoutX="20.0" layoutY="120.0" minHeight="16" minWidth="69" text="Name" />
+                        <Label fx:id="label6" layoutX="320.0" layoutY="200.0" minHeight="16" minWidth="69" text="Phone Number" />
+                        <Label fx:id="label7" layoutX="320.0" layoutY="120.0" minHeight="16" minWidth="69" text="Address" />
+                        <TextField fx:id="txtIDPrivate" layoutX="120.0" layoutY="30.0" promptText="Enter owner ID" />
+                        <TextField fx:id="txtAddressPrivate" layoutX="420.0" layoutY="120.0" prefHeight="50.0" prefWidth="200.0" promptText=" " text=" " />
+                        <TextField fx:id="txtPhoneNoPrivate" layoutX="420.0" layoutY="200.0" promptText=" " text=" " />
+                        <Button fx:id="buttonOwnerPrivateExit" layoutX="320.0" layoutY="300.0" onAction="#handleButtonOwnerPrivateExitAction" prefHeight="30.0" prefWidth="80.0" text="Exit" />
+                        <Label fx:id="label10" layoutX="20.0" layoutY="30.0" minHeight="16" minWidth="69" text="Owner ID" />
+                        <TextField fx:id="txtNamePrivate" layoutX="120.0" layoutY="121.0" promptText=" " text=" " />
+                        <Label fx:id="label91" layoutX="20.0" layoutY="200.0" minHeight="16" minWidth="69" text="Date of Birth" />
+                        <TextField fx:id="txtDOBPrivate" layoutX="120.0" layoutY="205.0" promptText=" " text=" " />
+                        <Button fx:id="buttonOwnerPrivateSearch" layoutX="320.0" layoutY="30.0" onAction="#handleButtonOwnerPrivateSearchAction" prefHeight="30.0" prefWidth="80.0" text="Search" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Corporate Owner">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="338.0" prefWidth="620.0">
+                     <children>
+                        <TextField fx:id="txtNameCorporate" layoutX="120.0" layoutY="120.0" promptText=" " text=" " />
+                          <Label fx:id="label" layoutX="20.0" layoutY="200.0" minHeight="16" minWidth="69" text="Phone Number" />
+                        <TextField fx:id="txtABNCorporate" layoutX="120.0" layoutY="30.0" promptText="Enter owner ABN" />
+                        <TextField fx:id="txtPhoneNoCorporate" layoutX="120.0" layoutY="200.0" text=" " />
+                        <Label fx:id="label1" layoutX="20.0" layoutY="30.0" minHeight="16" minWidth="69" text="ABN" />
+                          <Button fx:id="buttonOwnerCorpSearch" layoutX="320.0" layoutY="30.0" onAction="#handleButtonOwnerCorpSearchAction" prefHeight="30.0" prefWidth="80.0" text="Search" />
+                        <Label fx:id="label8" layoutX="20.0" layoutY="120.0" minHeight="16" minWidth="69" text="Name" />
+                        <Label fx:id="label71" layoutX="320.0" layoutY="120.0" minHeight="16" minWidth="69" text="Address" />
+                        <TextField fx:id="txtAddressCorporate" layoutX="420.0" layoutY="120.0" prefHeight="50.0" prefWidth="200.0" promptText=" " text=" " />
+                        <Button fx:id="buttonOwnerCorpExit" layoutX="320.0" layoutY="300.0" onAction="#handleButtonOwnerCorpExitAction" prefHeight="30.0" prefWidth="80.0" text="Exit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+    </children>
+</AnchorPane>

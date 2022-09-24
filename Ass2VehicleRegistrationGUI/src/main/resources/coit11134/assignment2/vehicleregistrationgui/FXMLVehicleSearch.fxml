@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coit11134.assignment2.vehicleregistrationgui.FXMLVehicleSearchController">
+   <children>
+      <TitledPane alignment="CENTER" animated="false" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="711.0" text="Vehicle Search">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TitledPane>
+      <TabPane layoutX="10.0" layoutY="42.0" prefHeight="484.0" prefWidth="711.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Heavy Vehicle">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="label4" layoutX="20.0" layoutY="120.0" minHeight="16" minWidth="69" text="Make" />
+                        <Label fx:id="label6" layoutX="320.0" layoutY="231.0" minHeight="16" minWidth="69" text="Load Capacity" />
+                        <Label fx:id="label7" layoutX="320.0" layoutY="120.0" minHeight="16" minWidth="69" text="Owner type" />
+                        <TextField fx:id="txtPlateNumber" layoutX="120.0" layoutY="30.0" promptText="Enter plate number" />
+                        <TextField fx:id="txtOwnerType" layoutX="446.0" layoutY="121.0" prefHeight="21.0" prefWidth="155.0" promptText=" " text=" " />
+                        <TextField fx:id="txtOwnerIDORABN" layoutX="449.0" layoutY="170.0" promptText=" " text=" " />
+                        <Button fx:id="buttonHeavyVehicleExit" layoutX="320.0" layoutY="300.0" onAction="#handleButtonVehicleHeavyExitAction" prefHeight="30.0" prefWidth="80.0" text="Exit" />
+                        <Label fx:id="label10" layoutX="20.0" layoutY="30.0" minHeight="16" minWidth="69" text="Plate Number" />
+                        <TextField fx:id="txtMake" layoutX="120.0" layoutY="121.0" promptText=" " text=" " />
+                        <Label fx:id="label91" layoutX="20.0" layoutY="231.0" minHeight="16" minWidth="69" text="Year" />
+                        <TextField fx:id="txtYear" layoutX="120.0" layoutY="227.0" promptText=" " text=" " />
+                        <Button fx:id="buttonHeavyVehicleSearch" layoutX="320.0" layoutY="30.0" onAction="#handleButtonVehicleHeavySearchAction" prefHeight="25.0" prefWidth="87.0" text="Search" />
+                        <Label layoutX="20.0" layoutY="178.0" text="Model" />
+                        <Label layoutX="320.0" layoutY="178.0" text="Owner ID/ABN" />
+                        <TextField fx:id="txtModel" layoutX="120.0" layoutY="174.0" />
+                        <TextField fx:id="txtLoadCapacity" layoutX="451.0" layoutY="227.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Light Vehicle">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="338.0" prefWidth="620.0">
+                     <children>
+                        <TextField fx:id="txtMake1" layoutX="120.0" layoutY="120.0" promptText=" " text=" " />
+                        <Label fx:id="label" layoutX="20.0" layoutY="187.0" minHeight="16" minWidth="69" text="Model" />
+                        <TextField fx:id="txtPlateNumber1" layoutX="120.0" layoutY="30.0" promptText="Enter plate number" />
+                        <TextField fx:id="txtModel1" layoutX="120.0" layoutY="183.0" text=" " />
+                        <Label fx:id="label1" layoutX="20.0" layoutY="30.0" minHeight="16" minWidth="69" text="Plate Number" />
+                        <Button fx:id="buttonLightVehicleSearch" layoutX="320.0" layoutY="30.0" onAction="#handleButtonVehicleLightSearchAction" prefHeight="25.0" prefWidth="108.0" text="Search" />
+                        <Label fx:id="label8" layoutX="20.0" layoutY="120.0" minHeight="16" minWidth="69" text="Make" />
+                        <Label fx:id="label71" layoutX="325.0" layoutY="120.0" minHeight="16" minWidth="69" text="Owner Type" />
+                        <TextField fx:id="txtOwnerType1" layoutX="452.0" layoutY="120.0" prefHeight="23.0" prefWidth="151.0" promptText=" " text=" " />
+                        <Button fx:id="buttonLightVehicleExit" layoutX="320.0" layoutY="335.0" onAction="#handleButtonVehicleLightSearchAction" prefHeight="30.0" prefWidth="80.0" text="Exit" />
+                        <TextField fx:id="txtYear1" layoutX="120.0" layoutY="244.0" prefHeight="25.0" prefWidth="150.0" />
+                        <TextField fx:id="txtOwnerIDORABN1" layoutX="453.0" layoutY="183.0" />
+                        <TextField fx:id="txtNoOfSeats" layoutX="453.0" layoutY="244.0" />
+                        <Label layoutX="20.0" layoutY="248.0" text="Year" />
+                        <Label layoutX="325.0" layoutY="187.0" text="Owner ID/ABN" />
+                        <Label layoutX="325.0" layoutY="248.0" text="Seats" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
